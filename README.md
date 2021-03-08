@@ -32,7 +32,7 @@ Before migrating any resources, one of the obvious first steps to take is to und
 
 To get a view of all Azure resources within your Azure subscription consider creating an inventory dashboard to help you identify service types and to get an idea of the quantity as it'll help to have a view of the scale of the migration tasks that lay ahead - see this blog from [Billy York][InventoryDashboard] on using [Azure Monitor Workbooks][WorkBooks] to build out an inventory dashboard.
 
-A common approach used by customers when initially migrating to Azure from on-premises is to use a migration discovery and assessment tool such as [Azure Migrate][Azuremigrate]. These tools are used to help organizations learn more about their environment including the inventory, capacity and utilization of their Virtual Machines. They can also be useful when planning to move from one Azure region to another. In addition consider also using [Azure Service Map][ServiceMap] to discover dependencies and identify connections between Virtual Machines. The information collected by these tools will help your organization group applications and services based on their relationship with one another and their dependencies - these groupings of applications and services allow you to break the potentially daunting task of relocating large amounts of services down into smaller, more manageable groups to migrate.
+A common approach used by customers when initially migrating to Azure from on-premises is to use a migration discovery and assessment tool such as [Azure Migrate][Azuremigrate]. These tools are used to help organizations learn more about their environment including the inventory, capacity and utilization of their Virtual Machines. They can also be useful when planning to move from one Azure region to another. In addition consider also using [Azure Service Map][ServiceMap] to discover dependencies and identify connections between Virtual Machines. The information collected by these tools will help your organization group applications and services based on their relationship with one another and their dependencies - these groupings of applications and services allow you to break the potentially daunting task of relocating large amounts of services down into smaller, more manageable groups to migrate. To complement this information also consider using [Network Watcher][NetworkWatcher] which will enable you to visualize your Azure virtual network topology.
 
 Another key aspect is to ensure application owners are identified and assigned to all Azure resources. This will be useful when you start planning the migration phasing and will help ensure the relevant application owners have input into the timing (think potential outage windows), testing and any necessary change control procedures. The recommended approach here is to use [Tags][Tags] to indicate application owners for each resource.
 
@@ -214,6 +214,7 @@ In addition, consider if the relocation of applications and services to the new 
 * [Exporting Analytics Workspace][AnalyticsWorkspaceExport]
 * [Exchanging Reserved Instances][RIexchange]
 * [Azure Pricing][AzurePricing]
+* [Network Watcher][NetworkWatcher]
 
 <br/><br/>
 
@@ -263,3 +264,4 @@ In addition, consider if the relocation of applications and services to the new 
 [AnalyticsWorkspaceExport]: https://docs.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs
 [RIexchange]: https://docs.microsoft.com/en-in/azure/cost-management-billing/reservations/exchange-and-refund-azure-reservations
 [AzurePricing]: https://azure.microsoft.com/en-us/pricing/
+[NetworkWatcher]: https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview
